@@ -19,9 +19,9 @@ namespace CompilingMusic
     class Set
     {
         public string basePath { get; set; }
-        public string compileSong { get; set; }
-        public string failSong { get; set; }
-        public string successSong { get; set; }
+        public string[] compileSong { get; set; }
+        public string[] failSong { get; set; }
+        public string[] successSong { get; set; }
     }
 
 
