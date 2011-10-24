@@ -38,7 +38,7 @@ public class IniParser
                 {
                     strLine = strLine.Trim().ToUpper();
 
-                    if (strLine != "")
+                    if (strLine != "" || !strLine.StartsWith(";"))
                     {
                         if (strLine.StartsWith("[") && strLine.EndsWith("]"))
                         {

@@ -4,6 +4,21 @@
         <name>CompilingMusic</name>
     </assembly>
     <members>
+        <member name="M:CompilingMusic.Connect.setRandomSet">
+            <summary>
+            Loads a random set file from the folder defined in settings and parses it into the global variable "currentSet".
+            </summary>
+        </member>
+        <member name="M:CompilingMusic.Connect.loadSettings">
+            <summary>
+            Parses CompilingMusicSettings.ini into the global variable "settings".
+            </summary>
+        </member>
+        <member name="M:CompilingMusic.Connect.stopAndFree">
+            <summary>
+            Frees the audio stream and BASS module to prevent memory leaks.
+            </summary>
+        </member>
         <member name="M:IniParser.#ctor(System.String)">
             <summary>
             Opens the INI file at the given path and enumerates the values in the IniParser.
